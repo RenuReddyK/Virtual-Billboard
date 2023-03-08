@@ -1,6 +1,5 @@
 """
 utils functions for part 1 (Barcelona)
-STUDENTS SHOULDN'T NEED TO CHANGE THIS
 
 """
 
