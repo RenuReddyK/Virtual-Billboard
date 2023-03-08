@@ -14,8 +14,7 @@ def est_homography(X, X_prime):
         H: 3x3 homogeneours transformation matrix s.t. X_prime ~ H*X
 
     """
-
-    ##### STUDENT CODE START #####
+    
     x = X[:, 0]
     y = X[:, 1]
     xP = X_prime[:, 0]
@@ -30,7 +29,5 @@ def est_homography(X, X_prime):
     [U, S, Vt] = np.linalg.svd(A)
     h = np.transpose(Vt)[:,-1]
     H = h.reshape(3,3)
-
-    ##### STUDENT CODE END #####
 
     return H
