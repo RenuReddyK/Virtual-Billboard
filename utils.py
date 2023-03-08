@@ -23,7 +23,6 @@ def calculate_interior_pts(image_size, corners):
 
     """
 
-    # YOU SHOULDN'T NEED TO CHANGE THIS
     path = Path(corners)
 
     xx, yy = np.meshgrid(range(image_size[1]), range(image_size[0]))
@@ -50,7 +49,6 @@ def inverse_warping(img_initial, img_final, pts_initial, pts_final):
 
     """
 
-    # YOU SHOULDN'T NEED TO CHANGE THIS
     pts_final = pts_final.astype(int)
 
     projected_img = img_initial.copy()
